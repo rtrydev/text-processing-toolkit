@@ -14,7 +14,7 @@ class TsvFileReader(BaseFileReader):
 
         segment_collections = [
             self.__get_segments(line)
-            for line in (lines[:line_limit] if line_limit != -1 else lines)
+            for line in lines[:line_limit]
         ]
 
         ja_tokenizer = TokenizerFactory.create_tokenizer(Language.JAPANESE)

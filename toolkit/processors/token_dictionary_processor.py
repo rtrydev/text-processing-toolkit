@@ -6,7 +6,7 @@ from toolkit.classes.token import Token
 class TokenDictionaryProcessor:
     @staticmethod
     def create_dictonary(token_sequence_collection: List[List[Token]]) -> Dict[str, Token]:
-        iter_count = count(4)
+        iter_count = count(5)
         result: Dict[str, Token] = {}
         entries: Set[str] = set()
 
