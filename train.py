@@ -31,7 +31,7 @@ HIDDEN_UNITS = 2048
 file_reader = TsvFileReader()
 
 token_sequences = file_reader.tokenize_file('sentences-ja-en.tsv', MAX_LINES)
-dictionary = TokenDictionaryProcessor.create_dictonary(token_sequences)
+dictionary = TokenDictionaryProcessor.create_dictionary(token_sequences)
 
 dumped_dict = json.dumps({
     key: asdict(value)
